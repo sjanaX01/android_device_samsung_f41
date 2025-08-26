@@ -15,11 +15,13 @@
 #
 
 # Inherit device configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, device/samsung/f41/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, vendor/samsung/f41/f41-vendor.mk)
 
 ## Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
@@ -33,7 +35,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 	BuildFingerprint="samsung/f41dd/f41:12/SP1A.210812.016/F415FXXS2CVK1:user/release-keys"
 
 ## Device configuration
-PRODUCT_NAME := lineage_f41
+PRODUCT_NAME := aosp_f41
 PRODUCT_DEVICE := f41
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-F415F
