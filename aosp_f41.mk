@@ -31,8 +31,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-samsung-ss
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	BuildDesc="f41dd-user 12 SP1A.210812.016 F415FXXS2CVK1 release-keys" \
-	BuildFingerprint="samsung/f41dd/f41:12/SP1A.210812.016/F415FXXS2CVK1:user/release-keys"
+	BuildDesc="f41dd-user 12 SP1A.210812.016 F415FXXS3CXD1 release-keys" \
+	BuildFingerprint="samsung/f41dd/f41:12/SP1A.210812.016/F415FXXS3CXD1:user/release-keys"
 
 ## Device configuration
 PRODUCT_NAME := aosp_f41
